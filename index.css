@@ -73,11 +73,17 @@ button{
 }
 
 
-@media (max-width:560px) {
+@media (max-width:600px) {
+    body {
+        margin: 0 1rem;
+        background-color: aquamarine;
+     }
+     
+    
     h1 {
         font-weight: 800;
         color: #4ADF86;
-        font-size: 3.7rem;
+        font-size:7rem;
         margin-bottom: 1rem;
     }
     
