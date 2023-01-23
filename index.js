@@ -4,14 +4,37 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 let passwordOne = document.getElementById("generated1")
 let passwordTwo = document.getElementById("generated2")
 
-console.log(passwordOne)
-
-console.log(passwordTwo)
 
 
+
+
+function randomCharacters1() { 
+
+    let randomIndex =characters[Math.floor(Math.random() * characters.length)] 
+    return randomIndex
+     
+}
+
+function randomCharacters2() { 
+
+    let randomIndex =characters[Math.floor(Math.random() * characters.length)] 
+    return randomIndex
+     
+}
 
 function generate() {
-    console.log("working")
-    
+    let randomPassword1 = " "
+    for (let i = 0 ; i < 15 ; i++) {
+     randomPassword1 += randomCharacters1()
+    }
+   passwordOne.textContent = randomPassword1
+
+   let randomPassword2= " "
+   for (let i = 0 ; i < 15 ; i++) {
+    randomPassword2 += randomCharacters2()
+   }
+  passwordTwo.textContent = randomPassword2
+   
 }
+
 
